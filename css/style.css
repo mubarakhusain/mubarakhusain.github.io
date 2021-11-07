@@ -1,0 +1,417 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Oswald:wght@200&display=swap');
+
+/* general css code */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    /* background-color: rgb(237,234,253); */
+}
+
+/* Header style start */
+header{
+    padding: 10px 0px 10px 0px;
+    /* border: 1px solid red; */
+   
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+/* header font  */
+header div h2{
+    font-family: 'Anton', sans-serif;  
+    color:black;
+}
+
+
+/* profile icon div */
+.profileIcon{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+/* I am online icon */
+.profileIcon span{
+    width:5%;
+    border: 2px solid rgb(9, 190, 2);
+    border-radius: 50%;
+    position: absolute;
+    right:0;
+    top:0;
+}
+/* profile icon at header*/
+.profileIcon img{
+  width:95%;
+  border-radius: 50%;
+}
+
+/* button section in header */
+/* Button div */
+.contactMe-btn{
+    width:65%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+/* button styling */
+.contact-btn{
+    border:1.5px solid black;
+    background-color: black;
+    border-radius: 0;
+    /* padding:5px;
+    margin:5px; */
+    min-width: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    color:white;
+}
+.contact-btn:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+    -moz-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+}
+
+
+/* Weather section  */
+.weather-widget{
+    width:10%;
+}
+.weather-widget button{
+    margin:2%;
+    padding:.5%;
+    width:auto;
+   
+}
+.weather-widget button:hover{
+    border:1px solid black;
+    border-style: none;
+}
+.weather-widget button::after{
+    border-style: none;
+}
+.weatherInfo{
+    margin-top: 2%;
+    padding:2%;
+    /* height:50%; */
+}
+.weatherDiv{
+    min-width: auto;
+    width:50%;
+}
+.verticleDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .4em;
+ 
+}
+.verticleDiv i{
+    margin:5%;
+}
+.verticleDiv p{
+    margin:0;
+}
+
+
+/* Header style end */
+
+
+/* Main Section start */
+
+/* section 1 */
+.middleSection-1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    height:90vh;
+    /* border:1px solid purple; */
+  
+}
+.middleSection-1 div{
+    /* border:1px solid pink; */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:auto;
+}
+.content-class1{
+    font-family: 'Oswald', sans-serif;
+   
+}
+.content-class1 h3{
+    color:rgb(185, 180, 180);
+}
+
+.content-class1 p:nth-child(3){
+    padding:0 7% 0% 7%;
+    text-align: center;
+}
+.main-image1 img{
+    width:50%;
+    filter:grayscale(100%);
+}
+/* section 1 end */
+
+/* section 2 */
+.section2{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:90vh;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(185, 180, 180);
+   
+}
+.section2 h2{
+    font-family: 'Anton', sans-serif;
+    margin: 10px 0px 0px 0px;
+    color:black;
+}
+.middleSection-2{
+    /* border: 2px solid red; */
+    width:100%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:2%;
+    position: relative;
+}
+.section2-h5-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.middleSection-2 img{
+    width:25%;
+    z-index: -1;
+    position: absolute;
+    filter: grayscale(100%);
+    
+}
+.info-with-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding:2%;
+
+}
+.adjustment-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    min-height: 30%;
+    height:80%;
+    z-index: 10;
+    position: absolute;
+    margin-top:3%;
+}
+.section2-h5{
+    color:black;
+    position: absolute;
+}
+/* section 2  end*/
+
+/* Main Section end */
+
+/* Footer section */
+.footerDiv{
+    display: flex;
+    /* border:1px solid yellow; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+.contact-me div{
+    margin-right: 1%;
+}
+.contact-me input{
+    border-radius: 0;
+    border: 1px solid black;
+    border-style: none;
+    
+   
+}
+.contact-me input::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color:rgb(185, 180, 180);
+}
+.contact-me input::after{
+    border-style: none;
+}
+.contact-me input:hover{
+    box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+-webkit-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+-moz-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+}
+.like{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:2%;
+}
+/* Footer section end*/
+
+/* Special button styling */
+.glitch-btn, .glitch-btn::after {
+    width: 100%;
+    height: 25%;
+    font-size: .9em;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, black 5%);
+    border: 0;
+    color: white;
+    letter-spacing: 1px;
+    /* line-height: 88px; */
+    box-shadow: 6px 0px 0px rgb(185, 180, 180);
+    outline: transparent;
+    position: relative;
+
+  }
+  .glitch-btn:hover{
+    box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+    -moz-box-shadow: 11px 14px 22px -7px rgba(0,0,0,0.85);
+  }
+  .glitch-btn::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #989c9c 3%, #df9c21 5%, #e2083b 5%);
+    text-shadow: -3px -3px 0px #c5bf05, 3px 3px 0px #1b77f0;
+    clip-path: var(--slice-0);
+  }
+  
+  .glitch-btn:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+ 
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+/* Special button styling ends*/
+
+
+
+/* Media Queries  */
+@media (min-width: 320px) and (max-width: 550px) {
+    .nameHeader{
+        font-size: 12px;
+    }
+    .weather-widget{
+        width:80%;
+    }
+    .profileIcon{
+       width:20%;
+    }
+    .middleSection-1 {
+        flex-direction: column;
+      
+    }
+    .middleSection-1 div{
+        width:100%;
+    }
+    .middleSection-2{
+        height: 100%;
+        
+    }
+    #footer-contact-btn{
+       width:50%;
+    }
+    
+}
+@media  (min-width: 426px) and (max-width: 768px){
+    .weatherDiv{
+        width:100%;
+    }
+    
+}
